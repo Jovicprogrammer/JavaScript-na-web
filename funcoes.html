@@ -16,8 +16,48 @@
 
         }
 
-        mediaAluno = mediaEstudante(5, 4.7, 9, 5.8)
-        alert(mediaAluno)
+        // mediaAluno = mediaEstudante(5, 4.7, 9, 5.8)
+        // alert(mediaAluno)
+
+        const mediaEstudante2 = (n1, n2, n3, n4) => {
+            return (n1 + n2 + n3 + n4 / 4)
+        }
+
+        const mediaEstudante3 = (n1, n2, n3, n4) => (n1 + n2 + n3 + n4 / 4)
+
+        // 
+
+        const negativoOuPositivo = function (numero) {
+            if (numero > 0) {
+                return("é positivo!")
+            }
+            else if (numero < 0) {
+                return("é negativo!")
+            }
+            else {
+                return "Zero"
+            }
+    }
+
+        // alert(negativoOuPositivo(7))
+
+        const parOuImpar = (numero) => {
+            if (numero % 2 == 0) {
+                return ("é par!")
+            } else {
+                return ("é impar!")
+            }
+        }
+        
+        // alert(parOuImpar(17))
+
+        // 
+
+        const parOuImparOpTernario = (numero) => {
+            return numero % 2 == 0 ? "par!" : "impar!"
+        }
+
+        alert(parOuImparOpTernario(8))
 
     </script>
     
