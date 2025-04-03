@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Funções</title>
+</head>
+<body>
+
+    <script>
+
+
+        const calculadora = function (n1, n2, operacao) {
+            
+            switch(operacao) {
+
+                case "+":
+                    return (`a soma dá ${n1 + n2}!`)
+                    break;
+
+                case "-":
+                    return (`a subtração dá ${n1 - n2}!`)
+                    break;
+
+                case "/":
+                    alert (`a divisão dá ${n1 / n2}!`)
+                    break;
+
+                case "*":
+                    return (`a multiplicação dá ${n1 * n2}!`)
+                    break;
+                
+                default:
+                    return ("opção inválida")
+            }
+        }
+
+        // alert(calculadora(2, 4, "*"))
+
+        const transformafemC = function (temperaturaF) {
+            
+            const grausC = temperaturaF - 32 * 5 / 9
+            return `${temperaturaF} ºF seria ${grausC.toFixed(2)} ºC`
+            
+        }
+
+        alert(transformafemC(4))
+
+        const opcao = prompt("digite algo ")
+        
+
+    </script>
+    
+</body>
+</html>
