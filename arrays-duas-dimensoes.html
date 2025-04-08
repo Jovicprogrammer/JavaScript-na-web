@@ -13,7 +13,25 @@
 
         const lista = [alunos, medias];
 
-        alert("o(a) aluno(a) " + (lista[0][1]) + "\n tirou a media " + (lista[1][1]) + ".")
+        // alert("o(a) aluno(a) " + (lista[0][1]) + "\n tirou a media " + (lista[1][1]) + ".")
+
+
+        // Procura em lista //
+
+        const ExibeNomeNota = function(nomeEstudante) {
+
+            if (alunos.includes(nomeEstudante)) {
+                posicao = alunos.indexOf(nomeEstudante)
+
+                return `o(a) aluno(a) ${lista[0][posicao]} tirou a média ${lista[1][posicao]}`
+            } else {
+                return "Estudante não existente!"
+            }
+        
+        }
+
+        alert(ExibeNomeNota("Ana"))
+
 
     </script>
 </body>
